@@ -1,0 +1,14 @@
+{
+  "name": "beach_ball_game",
+  "version": "1.0.0",
+  "description": "Beach Ball Game written with React and react-three-fiber",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "beach_ball_game"
+  ],
+  "author": "tozex",
+  "license": "ISC"
+}
