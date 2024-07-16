@@ -35,7 +35,43 @@ export default function MainMenu() {
         Play
       </div>
 
-      
+      {!isSettings ? (
+        <div className="main-menu-button" onClick={() => setIsSettings(true)}>
+          Settings
+        </div>
+      ) : (
+        <>
+          <div className="main-menu-section-title">Mode</div>
+          <div className="main-menu-selection-area">
+            <div
+              className={`main-menu-selection ${
+                mode === "random" ? "main-menu-selected" : ""
+              }`}
+              onClick={() => setMode("random")}
+            >
+              Random
+            </div>
+            <div
+              className={`main-menu-selection ${
+                mode === "tour" ? "main-menu-selected" : ""
+              }`}
+              onClick={() => setMode("tour")}
+            >
+              Tour
+            </div>
+            <div
+              className={`main-menu-selection ${
+                mode === "adventure" ? "main-menu-selected" : ""
+              }`}
+              onClick={() => setMode("adventure")}
+            >
+              Adventure
+            </div>
+          </div>
+
+          
+        </>
+      )}
     </div>
   );
 }
