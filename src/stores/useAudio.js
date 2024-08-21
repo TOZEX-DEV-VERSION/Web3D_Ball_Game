@@ -6,10 +6,10 @@ import { getLocalStorage, setLocalStorage } from "./utils";
 
 const useAudio = create(
   subscribeWithSelector((set) => ({
-    audio: getLocalStorage("audio") ? true: false,
+    audio: getLocalStorage("audio") ?? true,
     toggleAudio: () => {
       set((state) => {
-        const newAudioState = !!state.audio;
+        const newAudioState = !state.audio;
         setLocalStorage("audio", newAudioState);
         return { audio: newAudioState };
       });
