@@ -4,8 +4,11 @@
   "description": "Beach Ball Game written with React and react-three-fiber",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "client": "vite"
+    "start":"npm run server | vite",
+    "client": "vite",
+    "build": "vite build",
+    "server": "node ./src/backend/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "beach_ball_game"
